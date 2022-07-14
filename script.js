@@ -27,13 +27,13 @@ const updateUI = (data) => {
     `;
 
     // updating the night/day & icon imgs
-    const iconSrc = `img/icons/${weather.WeatherIcon}.svg`;
+    const iconSrc = `${weather.WeatherIcon}.svg`;
 
     icon.setAttribute('src', iconSrc);
 
     //tenary operator for if/else statement
 
-    let timeSrc = weather.IsDayTime ? 'img/day.svg' : 'img/night.svg';
+    let timeSrc = weather.IsDayTime ? 'day.svg' : 'night.svg';
     time.setAttribute('src', timeSrc);
 
     //update title text color
