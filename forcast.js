@@ -3,7 +3,7 @@ const apiKey = '11y6adimU2t8G37UGbsG0Y6r0MibXi5W'; //create a variable for the A
 
 //get weather information
 const getWeather = async (id) => {
-    const base = "http://dataservice.accuweather.com/currentconditions/v1/"; 
+    const base = "https://dataservice.accuweather.com/currentconditions/v1/"; 
     const query = `${id}?apikey=${apiKey}`;
 
 
@@ -19,7 +19,7 @@ const getWeather = async (id) => {
 
 //get city information
 const getLocation = async (city) => {
-    const base = "http://dataservice.accuweather.com/locations/v1/cities/search";
+    const base = "https://dataservice.accuweather.com/locations/v1/cities/search";
     const query = `?apikey=${apiKey}&q=${city}`;
 
 
